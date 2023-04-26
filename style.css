@@ -1,5 +1,5 @@
 body{
-     background-image: url(Imagens/fundo.jpg);
+     background: url(Imagens/fundo.jpg);
      background-size: cover;
      color: white;
      text-align: left;
@@ -29,7 +29,7 @@ span{
 ul{
     text-align: right;
     list-style: none;
-    margin-top: -30px;
+    margin-top: -50px;
 }
 
 li{
@@ -66,6 +66,25 @@ ul li a:hover{
     opacity: 0.6;
 }
 
-.votos{
-    color: white;
+@media (max-width: 640px) {
+    body {
+        text-align: center;
+    }
+
+    h1{
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        padding-top: 60px;
+        text-align: center;
+    }
 }
+
+@media (max-width: 768px) {
+    p {
+        font-size: 26px;
+    }
+}
+
